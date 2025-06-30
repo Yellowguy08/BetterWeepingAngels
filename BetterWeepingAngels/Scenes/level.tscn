@@ -1,9 +1,9 @@
 [gd_scene load_steps=11 format=3 uid="uid://rouptq738ckm"]
 
 [ext_resource type="PackedScene" uid="uid://bpjm6nm2d4q5s" path="res://Scenes/player.tscn" id="1_0yrtt"]
-[ext_resource type="Material" uid="uid://cv6debvydmaqr" path="res://wall.tres" id="2_mh6rm"]
-[ext_resource type="Texture2D" uid="uid://bg5d4q04nm1nf" path="res://noise.tres" id="3_g6hl1"]
+[ext_resource type="Material" uid="uid://cv6debvydmaqr" path="res://Assets/wall.tres" id="2_ymwly"]
 [ext_resource type="PackedScene" uid="uid://bie1utc8wlkgj" path="res://Scenes/monster.tscn" id="3_pkepx"]
+[ext_resource type="Texture2D" uid="uid://bg5d4q04nm1nf" path="res://Assets/noise.tres" id="3_rj41g"]
 [ext_resource type="Script" path="res://Scripts/enivronment.cs" id="5_o0wur"]
 
 [sub_resource type="NavigationMesh" id="NavigationMesh_dctnk"]
@@ -14,7 +14,7 @@ polygons = [PackedInt32Array(1, 0, 2), PackedInt32Array(2, 0, 3), PackedInt32Arr
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_pcx72"]
 albedo_color = Color(0.278431, 0.160784, 0, 1)
-albedo_texture = ExtResource("3_g6hl1")
+albedo_texture = ExtResource("3_rj41g")
 uv1_scale = Vector3(10, 10, 10)
 
 [sub_resource type="PlaneMesh" id="PlaneMesh_73tlo"]
@@ -48,52 +48,52 @@ use_collision = true
 [node name="CSGBox3D" type="CSGBox3D" parent="NavigationRegion3D/CSGCombiner3D"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 4.09127, 1.78835e-07)
 size = Vector3(14.429, 2.33259, 16.5526)
-material = ExtResource("2_mh6rm")
+material = ExtResource("2_ymwly")
 
 [node name="CSGBox3D2" type="CSGBox3D" parent="NavigationRegion3D/CSGCombiner3D"]
 transform = Transform3D(-4.37114e-08, 1, 4.37114e-08, -1, -4.37114e-08, -4.37114e-08, -4.37114e-08, -4.37114e-08, 1, -8, 10.0913, 4.41103e-07)
 size = Vector3(14.429, 2.33259, 16.8722)
-material = ExtResource("2_mh6rm")
+material = ExtResource("2_ymwly")
 
 [node name="CSGBox3D3" type="CSGBox3D" parent="NavigationRegion3D/CSGCombiner3D"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6, -7.90873, -3.45701e-07)
 size = Vector3(14.429, 2.33259, 15.4908)
-material = ExtResource("2_mh6rm")
+material = ExtResource("2_ymwly")
 
 [node name="CSGBox3D4" type="CSGBox3D" parent="NavigationRegion3D/CSGCombiner3D"]
 transform = Transform3D(-4.37114e-08, -1, -4.37114e-08, 1, -4.37114e-08, -4.37114e-08, 4.37114e-08, -4.37114e-08, 1, -16, 4.09127, 1.78835e-07)
 size = Vector3(14.429, 2.33259, 15.9754)
-material = ExtResource("2_mh6rm")
+material = ExtResource("2_ymwly")
 
 [node name="CSGBox3D5" type="CSGBox3D" parent="NavigationRegion3D/CSGCombiner3D"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4, -15.9087, -6.95393e-07)
 size = Vector3(14.429, 2.33259, 16.8361)
-material = ExtResource("2_mh6rm")
+material = ExtResource("2_ymwly")
 
 [node name="CSGBox3D6" type="CSGBox3D" parent="NavigationRegion3D/CSGCombiner3D"]
 transform = Transform3D(-4.37114e-08, 1, 4.37114e-08, -1, -4.37114e-08, -4.37114e-08, -4.37114e-08, -4.37114e-08, 1, 8.40144, -1.90976, -8.34782e-08)
 size = Vector3(14.429, 2.33259, 16.8388)
-material = ExtResource("2_mh6rm")
+material = ExtResource("2_ymwly")
 
 [node name="border1" type="CSGBox3D" parent="NavigationRegion3D/CSGCombiner3D"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -25, 0, 0)
 size = Vector3(1, 50, 20)
-material = ExtResource("2_mh6rm")
+material = ExtResource("2_ymwly")
 
 [node name="border2" type="CSGBox3D" parent="NavigationRegion3D/CSGCombiner3D"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 25, 0, 0)
 size = Vector3(1, 50, 20)
-material = ExtResource("2_mh6rm")
+material = ExtResource("2_ymwly")
 
 [node name="border3" type="CSGBox3D" parent="NavigationRegion3D/CSGCombiner3D"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 25, 0)
 size = Vector3(50, 1, 20)
-material = ExtResource("2_mh6rm")
+material = ExtResource("2_ymwly")
 
 [node name="border4" type="CSGBox3D" parent="NavigationRegion3D/CSGCombiner3D"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -25, 0)
 size = Vector3(50, 0, 20)
-material = ExtResource("2_mh6rm")
+material = ExtResource("2_ymwly")
 
 [node name="StaticBody3D" type="StaticBody3D" parent="NavigationRegion3D"]
 

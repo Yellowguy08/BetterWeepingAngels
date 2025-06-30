@@ -1,6 +1,6 @@
 [gd_scene load_steps=2 format=3 uid="uid://b7l7jigu3aj3l"]
 
-[ext_resource type="PackedScene" uid="uid://bs8dgw5c8s7ts" path="res://creature.glb" id="1_kikai"]
+[ext_resource type="PackedScene" uid="uid://bs8dgw5c8s7ts" path="res://Assets/creature.glb" id="1_kikai"]
 
 [node name="creature" instance=ExtResource("1_kikai")]
 

@@ -1,10 +1,12 @@
-[gd_scene load_steps=4 format=3 uid="uid://cgtrs1yi8mm6l"]
+[gd_scene load_steps=5 format=3 uid="uid://cgtrs1yi8mm6l"]
 
+[ext_resource type="Script" path="res://Scripts/main.cs" id="1_1hg5s"]
 [ext_resource type="PackedScene" uid="uid://dbk5lwwx5deyx" path="res://Scenes/menu.tscn" id="1_vpyfd"]
 [ext_resource type="Script" path="res://Scripts/fps.cs" id="2_wjr8b"]
-[ext_resource type="AudioStream" uid="uid://hlqjwo4wiiqa" path="res://sfx-www.free-stock-music.com.mp3" id="3_pwrsa"]
+[ext_resource type="AudioStream" uid="uid://hlqjwo4wiiqa" path="res://Assets/Audio/sfx-www.free-stock-music.com.mp3" id="4_k1d2y"]
 
 [node name="MAIN" type="Node"]
+script = ExtResource("1_1hg5s")
 metadata/atmosphere = true
 metadata/monster = true
 metadata/rays = false
@@ -25,6 +27,6 @@ text = "FPS"
 script = ExtResource("2_wjr8b")
 
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
-stream = ExtResource("3_pwrsa")
+stream = ExtResource("4_k1d2y")
 volume_db = -20.0
 autoplay = true

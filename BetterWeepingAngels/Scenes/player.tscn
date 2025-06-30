@@ -1,7 +1,7 @@
 [gd_scene load_steps=5 format=3 uid="uid://bpjm6nm2d4q5s"]
 
 [ext_resource type="Script" path="res://Scripts/player.cs" id="1_raopn"]
-[ext_resource type="AudioStream" uid="uid://b7mteqfanhdxy" path="res://step.ogg" id="2_wc7w0"]
+[ext_resource type="AudioStream" uid="uid://b7mteqfanhdxy" path="res://Assets/Audio/step.ogg" id="2_37nns"]
 
 [sub_resource type="CapsuleShape3D" id="CapsuleShape3D_s7fwb"]
 
@@ -23,7 +23,7 @@ light_color = Color(0.701961, 0.517647, 0.0156863, 1)
 spot_range = 10.0
 
 [node name="aux" type="AudioStreamPlayer3D" parent="."]
-stream = ExtResource("2_wc7w0")
+stream = ExtResource("2_37nns")
 volume_db = 45.0
 pitch_scale = 1.75
 autoplay = true
