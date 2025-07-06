@@ -1,0 +1,29 @@
+[gd_scene load_steps=5 format=3 uid="uid://bpjm6nm2d4q5s"]
+
+[ext_resource type="Script" path="res://Scripts/player.cs" id="1_raopn"]
+[ext_resource type="AudioStream" uid="uid://b7mteqfanhdxy" path="res://Assets/Audio/step.ogg" id="2_37nns"]
+
+[sub_resource type="CapsuleShape3D" id="CapsuleShape3D_s7fwb"]
+
+[sub_resource type="CapsuleMesh" id="CapsuleMesh_qwv6a"]
+
+[node name="CharacterBody" type="CharacterBody3D"]
+script = ExtResource("1_raopn")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+shape = SubResource("CapsuleShape3D_s7fwb")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="."]
+mesh = SubResource("CapsuleMesh_qwv6a")
+
+[node name="Camera3D" type="Camera3D" parent="."]
+
+[node name="SpotLight3D" type="SpotLight3D" parent="Camera3D"]
+light_color = Color(0.701961, 0.517647, 0.0156863, 1)
+spot_range = 10.0
+
+[node name="aux" type="AudioStreamPlayer3D" parent="."]
+stream = ExtResource("2_37nns")
+volume_db = 45.0
+pitch_scale = 1.75
+autoplay = true
